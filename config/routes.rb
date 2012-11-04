@@ -1,3 +1,7 @@
 CapiwebRails::Application.routes.draw do
-  root :to => "home#index"
+  resources :projects
+
+  resources :deployments
+
+  root :to => "projects#index"
 end

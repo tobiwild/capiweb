@@ -1,0 +1,31 @@
+%h1 Listing deployments
+
+%table
+  %tr
+    %th Created
+    %th Environment
+    %th Task
+    %th Branch
+    %th Extra params
+    %th Output
+    %th Status
+    %th
+    %th
+    %th
+
+  - @deployments.each do |deployment|
+    %tr
+      %td= deployment.created_at
+      %td= deployment.environment
+      %td= deployment.task
+      %td= deployment.branch
+      %td= deployment.extra_params
+      %td= deployment.output
+      %td= deployment.status
+      %td= link_to 'Show', deployment
+      %td= link_to 'Edit', edit_deployment_path(deployment)
+      %td= link_to 'Destroy', deployment, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Deployment', new_deployment_path

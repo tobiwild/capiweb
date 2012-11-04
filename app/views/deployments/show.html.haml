@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Environment:
+  = @deployment.environment
+%p
+  %b Task:
+  = @deployment.task
+%p
+  %b Branch:
+  = @deployment.branch
+%p
+  %b Extra params:
+  = @deployment.extra_params
+%p
+  %b Output:
+  = @deployment.output
+%p
+  %b Status:
+  = @deployment.status
+
+= link_to 'Edit', edit_deployment_path(@deployment)
+\|
+= link_to 'Back', deployments_path

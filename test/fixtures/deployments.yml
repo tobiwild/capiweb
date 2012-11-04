@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  created: 2012-11-04 16:35:53
+  environment: MyString
+  task: MyString
+  branch: MyString
+  extra_params: MyString
+  output: MyString
+  status: 1
+
+two:
+  created: 2012-11-04 16:35:53
+  environment: MyString
+  task: MyString
+  branch: MyString
+  extra_params: MyString
+  output: MyString
+  status: 1
